@@ -1,0 +1,28 @@
+def write_poetry():
+    """
+    This function generates a random poem and returns it as a string.
+    
+    Returns:
+    str: A randomly generated poem
+    """
+    try:
+        # Import the necessary library for generating random text
+        import random
+        
+        # Define a list of lines for the poem
+        lines = [
+            "Roses are red",
+            "Violets are blue",
+            "Sugar is sweet",
+            "And so are you"
+        ]
+        
+        # Randomly select lines from the list to form the poem
+        poem = random.choice(lines)
+        
+        # Return the generated poem
+        return poem
+    except Exception as e:
+        # Log the error
+        print(f"Error: {e}")
+        return ""
